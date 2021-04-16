@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-// import Image from '../../components/Image';
+import Image from '../../components/Image';
 // import Button from '../../components/Button';
 
 import * as styles from './Header.module.scss';
@@ -12,11 +12,11 @@ const Header = props => {
     <header className={styles.header}>
       <div className={classNames(styles.headerContent, styles.container)}>
         <div className={styles.imageWrapper}>
-          {/* <Image 
+          <Image 
             // className={styles.}
             fileName={"graphic-apptailors.jpg"}
             alt="main graphic"  
-          /> */}
+          />
         </div>
         <div className={styles.introText}>
           <h1 className={styles.introTitle}>
