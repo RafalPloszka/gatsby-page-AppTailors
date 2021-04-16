@@ -6,3 +6,10 @@ $backgroundGray: #efeff4 !default;
 $mainDark: #001427 !default;
 $fontGray: #515265 !default;
 $mainBlue: #313edd !default;
+$lightBlue: #256eff !default;
+
+// Custom media quries:
+$viewportSmall: (min-width: 425px);
+$viewportMedium: (min-width: 768px);
+$viewportLarge: (min-width: 1024px);
+$viewportXLarge: (min-width: 1440px);
