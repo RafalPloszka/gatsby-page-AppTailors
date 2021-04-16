@@ -1,0 +1,9 @@
+@import "./core.scss";
+
+
+body {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+  background-color: $backgroundWhite;
+  color: $mainDark;
+}

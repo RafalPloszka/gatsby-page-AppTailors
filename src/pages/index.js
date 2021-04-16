@@ -1,4 +1,7 @@
 import * as React from "react";
+import "@fontsource/poppins";
+
+import '../styles/global.scss';
 
 const IndexPage = () => {
   return (
