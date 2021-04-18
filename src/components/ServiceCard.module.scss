@@ -1,0 +1,61 @@
+@import '../styles/core.scss';
+
+.serviceCard {
+  color: #001427;
+  background-color: #fcfcfc;
+  border: none;
+  transition: all .15s ease-in-out;
+  height: 100%!important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background-clip: border-box;
+  border-radius: 30px;
+  margin: 10px 5px;
+
+  &:hover {
+    box-shadow: 0 0 20px -5px rgb(0 0 0 / 25%);
+  }
+}
+
+.imageWrapper {
+  width: 80%;
+  margin: 48px auto 0;
+} 
+
+.description {
+  width: 100%;
+  padding: 0 32px;
+}
+
+.title {
+  font-weight: 600;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 1.6rem;
+  margin: 50px 0 40px;
+  @media (min-width: 1024px) {
+    font-size: 1.3rem;
+    margin: 40px 0 30px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 1.6rem;
+  }
+}
+
+.text {
+  color: $fontGray;
+  font-weight: 500;
+  text-align: left;
+  font-size: .8rem;
+  margin-bottom: 36px;
+  @media (min-width: 124px) {
+    font-size: 1rem;
+  }
+  @media (min-width: 1440px) {
+    font-size: 1rem;
+    margin-bottom: 48px;
+  }
+} 

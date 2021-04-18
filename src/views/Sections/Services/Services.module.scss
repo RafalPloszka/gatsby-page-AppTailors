@@ -33,3 +33,22 @@
   font-weight: 600;
   margin-bottom: 70px;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.column {
+  margin: 20px 0;
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media (min-width: 1024px){
+    flex: 0 0 calc(100% /3) !important;
+    max-width: calc(100% /3) !important;
+  }
+}

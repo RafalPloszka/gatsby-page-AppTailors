@@ -1,5 +1,8 @@
 @import "./core.scss";
 
+* {
+  box-sizing: border-box;
+}
 
 body {
   overflow-x: hidden;
@@ -10,6 +13,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
   margin-bottom: .5rem;
   font-weight: 500;
   line-height: 1.2;
@@ -24,4 +28,16 @@ button, input, optgroup, select, textarea {
 
 button:focus:not(:focus-visible) {
   outline: 0;
+}
+
+a {
+  color: #313edd;
+  transition: all .1s ease-in-out;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+p {
+  line-height: 1.75;
+  white-space: pre-line;
 }
