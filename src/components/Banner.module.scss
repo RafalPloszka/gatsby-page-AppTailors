@@ -1,0 +1,93 @@
+@import '../styles/core.scss';
+
+.banner {
+  display: inline-flex;
+  position: relative;
+  height: auto;
+  background-color: #001427;
+  font-weight: 300;
+  color: #fcfcfc;
+  line-height: normal;
+  width: 100%;
+  @media (min-width: 1024px) {
+    width: 95%;
+  }
+}
+
+.top {
+  border-bottom-right-radius: 100px;
+}
+
+.bottom {
+  border-top-right-radius: 100px;
+}
+
+.content {
+  flex-direction: column;
+  margin: 50px 7%;
+  display: inline-flex;
+  width: 100%;
+  max-width: 80vw;
+  @media (min-width: 768px) {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 4%;
+  }
+  @media (min-width: 1024px) {
+    margin: 50px auto 50px 7%;
+  }
+  @media (min-width: 1444px) {
+    margin: 50px auto 50px 10%;
+  }
+}
+
+.title {
+  font-size: 2rem;
+  margin: 30px;
+  @media (min-width: 768px) {
+    width: 100%;
+    font-size: 2.6rem;
+  }
+  @media (min-width: 1024px) {
+    width: 60%;
+    font-size: 3rem;
+  }
+  @media (min-width: 1444px) {
+    width: 70%;
+    font-size: 3.2rem;
+  }
+}
+
+.boldText {
+  font-weight: 700;
+}
+
+.caption {
+  font-size: .8rem;
+  width: 95%;
+  @media (min-width: 768px) {
+    font-size: .9rem;
+    width: 90%;
+    margin: 30px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 50%;
+    font-size: .9rem;
+    margin-right: 60px;
+  }
+  @media (min-width: 1440px) {
+    font-size: 1rem;
+  }
+}
+
+.button {
+  text-align: right;
+  width: 90%;
+  font-weight: 700;
+  transition: all .1s ease-in-out;
+  @media (min-width: 1024px) {
+    width: 50%
+  }
+}
