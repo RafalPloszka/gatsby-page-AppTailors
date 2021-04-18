@@ -29,6 +29,8 @@ const Header = props => {
             className={styles.button}
             message={'BROWSE NOW'}
             onClick={() => console.log('CLICK!')}
+            primary
+            internalLink="#Services"
           />
         </div>
       </div>
