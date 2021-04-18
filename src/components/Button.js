@@ -25,7 +25,7 @@ const Button = ({ primary, secondary, className, message, internalLink, external
 
   if (internalLink) {
     return (
-      <Link href={internalLink}>
+      <Link to={internalLink}>
         {buttonContent}
       </Link>
     )
