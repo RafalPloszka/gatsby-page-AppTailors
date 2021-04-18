@@ -31,9 +31,13 @@
   }
 }
 
-
-
 .secondary {
+  color: $mainBlue;
+  background-color: transparent;
+  border: 2px solid $mainBlue;
 
+  &:hover {
+    color: #fff;
+    background-color: $mainBlue;
+  }
 }
-

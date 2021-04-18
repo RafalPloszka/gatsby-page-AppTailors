@@ -27,7 +27,11 @@ const Banner = ({ position, version, title, boldText, caption, buttonClassName})
         }
         {version === 'button' &&
           <div className={styles.button}>
-            <Button message={caption} className={buttonClassName}/>
+            <Button 
+              message={caption} 
+              className={buttonClassName}
+              primary
+            />
           </div>
         }
       </div>

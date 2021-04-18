@@ -1,0 +1,87 @@
+@import '../styles/core.scss';
+
+.portfolioItem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 1rem 0;
+  @media (min-width: 768px) {
+    margin: 3rem 0;
+  }
+  @media (min-width: 1024px) {
+    margin: 4rem 0;
+    align-items: center;
+    flex-direction: row;
+  }
+  @media (min-width: 1440px) {
+    margin: 5rem 0;
+  }
+}
+
+.reversed {
+  @media (min-width: 1024px) {
+    flex-direction: row-reverse;
+  }
+}
+
+.imageWrapper {
+  width: 90%;
+  margin: 0 auto;
+  @media (min-width: 768px) {
+    width: 45%;
+    margin: 0 auto 50px;
+  }
+  @media (min-width: 1024px) {
+    width: 40%;
+    margin: 0;
+  }
+  @media (min-width: 1440px) {
+    width: 35%;
+  }
+}
+
+.caption {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  margin: 20px 0;
+  margin-left: 12%;
+  @media (min-width: 1024px) {
+    max-width: 40%;
+  } 
+}
+
+.header {
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.caption p {
+  font-weight: 300;
+  color: $fontGray;
+  margin-bottom: 0;
+  margin-top: 40px;
+  margin-top: 30px;
+  font-size: 1rem;
+  @media (min-width: 1024px) {
+    margin-top: 40px;
+  }
+}
+
+.button {
+  font-size: .6rem;
+  font-weight: 700;
+  letter-spacing: .03rem;
+  text-transform: uppercase;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 12px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  @media (min-width: 678px) {
+    margin-top: 60px;
+    padding: 12px 24px;
+  }
+}

@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 import Banner from '../../../components/Banner';
+import PortfolioItem from '../../../components/PortfolioItem';
 
 import * as styles from './Portfolio.module.scss';
 
@@ -19,7 +20,28 @@ const Portfolio = props => {
       </section>
 
       <section className={styles.container}>
-
+        <PortfolioItem
+          title="Met Office"
+          imageFileName="mockup-metoffice.jpg"
+          imageAlt="Met Office photo"
+          description="Weather information available just when you need it." 
+          link={null}
+        />
+        <PortfolioItem
+          reversed
+          title="The Telegraph"
+          imageFileName="mockup-thetelegraph.jpg"
+          imageAlt="The Telegraph photo"
+          description="Delivering The Telegraph's extensive editorial content to readers on mobile." 
+          link={null}
+        />
+        <PortfolioItem
+          title="Vagus"
+          imageFileName="mockup-vagus.jpg"
+          imageAlt="Vagus photo"
+          description="A scientific project that turned into a product." 
+          link={null}
+        />
       </section>
 
       <section>
