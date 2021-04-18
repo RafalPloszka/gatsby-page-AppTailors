@@ -1,0 +1,132 @@
+@import '../../styles/core.scss';
+
+.navbar {
+  background-color: #fcfcfc;
+  top: -1px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: .5rem 1rem;
+  height: 80px;
+  width: 100vw;
+  @media (min-width: 991px) {
+    height: 100px;
+  }
+  @media (min-width: 1440px) {
+    height: 120px;
+  }
+}
+
+.fixedTop {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.shrink {
+  padding: 0;
+  height: 80px;
+  box-shadow: 0 20px 22px -22px rgb(0 0 0 / 15%);
+}
+
+.container {
+  max-width: 80vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 768px) {
+    padding: 10px !important;
+  }
+  @media (min-width: 992px) {
+    flex-wrap: nowrap;
+  }
+}
+
+.collapseContent {
+  @media (min-width: 991px) {
+    justify-content: flex-end;
+  }
+}
+
+.navItem {
+  letter-spacing: .01rem;
+  padding: 4px 0;
+  transition: all .1s ease-in-out;
+  font-size: 0.8rem;
+  @media (min-width: 991px) {
+    font-size: 0.6rem;
+  }
+  @media (min-width:1440px) {
+    font-size: 0.7rem;
+  }
+}
+
+.collapse {
+  transition: all .15s ease-in-out;
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  @media (min-width: 992px) { 
+    display: flex!important;
+    flex-basis: auto;
+  }
+}
+
+.collapseContent {
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  @media (min-width: 992px) {
+    display: flex!important;
+    flex-basis: auto;
+  }
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  @media (min-width: 992px) {
+    flex-direction: row;
+  }
+}
+
+.link {
+  font-size: 120%;
+  font-weight: 600;
+  padding-right: 0;
+  padding-left: 0;
+  color: #001427;
+  &:hover {
+    color: $mainBlue;
+  }
+  @media (min-width: 992px) {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    margin: 1.1em .8em!important;
+  }
+}
+  
+.button {
+  font-size: .8rem;
+  margin-left: 50px;
+  padding: 12px 34px;
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: .01rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 12px;
+}
