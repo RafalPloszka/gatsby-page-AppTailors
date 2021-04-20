@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { Link } from 'gatsby';
 
 import Image from './Image';
 import Button from './Button';
@@ -17,12 +18,15 @@ const PortfolioItem = ({ reversed, title, imageFileName, imageAlt, description, 
       <div className={styles.caption}>
         <h3 className={styles.header}>{title}</h3>
         <p>{description}</p>
-        <Button
-          className={styles.button}
-          message="Read success story &nbsp; &nbsp; &nbsp; &nbsp; ⟶"
-          internalLink="/TEST"
-          secondary
-        />
+        <Link to="/Test">
+          <Button
+            className={styles.button}
+            message="Read success story &nbsp; &nbsp; &nbsp; &nbsp; ⟶"
+            internalLink="/TEST"
+            secondary
+          />
+        </Link>
+        
       </div>
     </div>
   )

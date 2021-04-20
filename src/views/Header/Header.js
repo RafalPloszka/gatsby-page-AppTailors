@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { Link } from 'react-scroll';
+
 import Image from '../../components/Image';
 import Button from '../../components/Button';
 
@@ -25,13 +27,18 @@ const Header = props => {
           <p className={styles.introLead}>
             Bringing business ideas to life through the use of technology and design.
           </p>
-          <Button
-            className={styles.button}
-            message={'BROWSE NOW'}
-            onClick={() => console.log('CLICK!')}
-            primary
-            internalLink="#Services"
-          />
+          <Link 
+            to="Services" 
+            spy 
+            smooth="easeInOutQuart"
+          >
+            <Button
+              className={styles.button}
+              message={'BROWSE NOW'}
+              onClick={() => console.log('CLICK!')}
+              primary
+            />
+          </Link>
         </div>
       </div>
     </header>
