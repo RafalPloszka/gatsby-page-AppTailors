@@ -114,19 +114,24 @@
 }
 
 .link {
+  cursor: pointer;
   font-size: 120%;
   font-weight: 600;
   padding-right: 0;
   padding-left: 0;
   color: #001427;
   &:hover {
-    color: $mainBlue;
+    color: $mainBlue !important;
   }
   @media (min-width: 992px) {
     padding-right: .5rem;
     padding-left: .5rem;
     margin: 1.1em .8em!important;
   }
+}
+
+.active {
+  color: $mainBlue !important;
 }
 
 .cursorPointer {

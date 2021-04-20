@@ -15,8 +15,8 @@ import Portfolio from "../views/Sections/Portfolio"
 import '../styles/global.scss';
 
 const links = [
-  { to: "/", name: "Services"},
-  { to: "/", name: "Featured projects" },
+  { to: "Services", name: "Services"},
+  { to: "Portfolio", name: "Featured projects" },
   { to: "/", name: "About"},
   { to: "/", name: "Values" },
   { to: "/", name: "Blog" },
