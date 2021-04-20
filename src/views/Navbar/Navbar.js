@@ -12,6 +12,7 @@ import * as styles from './Navbar.module.scss';
 const Navbar = ({ links }) => {
 
   const [shrink, setShrink] = useState(false);
+  const [expanded, setExpanded] = useState(false);
 
   const handleWindowScroll = () => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
@@ -42,36 +43,38 @@ const Navbar = ({ links }) => {
             </svg>
           </Link>
         </div>
-        <div className={styles.collapse}>
-          <div className={classNames(styles.container, styles.collapseContent)}>
-            <div className={styles.navLinks}>
-              {links.map(link => {
-                return (
-                  <div className={styles.navItem} key={link.name}>
-                    <Link 
-                      to={link.to}
-                      className={styles.link}
-                      activeClass={styles.active}
-                      spy
-                      smooth="easeInOutQuart"
-                      // onClick={onClick}
-                    >
-                      {link.name}
-                    </Link>
-                  </div>
-                )
-              })}
+        {expanded ?
+          <div className={styles.collapse}>
+            <div className={classNames(styles.container, styles.collapseContent)}>
+              <div className={styles.navLinks}>
+                {links.map(link => {
+                  return (
+                    <div className={styles.navItem} key={link.name}>
+                      <Link 
+                        to={link.to}
+                        className={styles.link}
+                        activeClass={styles.active}
+                        spy
+                        smooth="easeInOutQuart"
+                        // onClick={onClick}
+                      >
+                        {link.name}
+                      </Link>
+                    </div>
+                  )
+                })}
+              </div>
+              <a href="mailto:hello@apptailors.com">
+                <Button 
+                  className={styles.button}
+                  message="Estimate Project"
+                  secondary
+                />
+              </a>
+              
             </div>
-            <a href="mailto:hello@apptailors.com">
-              <Button 
-                className={styles.button}
-                message="Estimate Project"
-                secondary
-              />
-            </a>
-            
           </div>
-        </div>
+        : null }
       </div>
     </nav>
   )
