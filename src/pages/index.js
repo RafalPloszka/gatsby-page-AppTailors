@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Helmet } from "react-helmet";
 import "@fontsource/poppins";
 import "@fontsource/poppins/300.css";
 import "@fontsource/poppins/500.css";
@@ -11,6 +10,7 @@ import Navbar from "../views/Navbar";
 import Header from "../views/Header";
 import Services from "../views/Sections/Services";
 import Portfolio from "../views/Sections/Portfolio"
+import SEO from '../components/SEO';
 
 import '../styles/global.scss';
 
@@ -20,16 +20,14 @@ const links = [
   { to: "/", name: "About"},
   { to: "/", name: "Values" },
   { to: "/", name: "Blog" },
-]
+];
+const keywords = "AppTailors, iOS Development, Android Development, Flutter Development, Mobile Agency, Consulting Agency, Software House, Mobile App, Mobile Application, Software Development Agency"
+const description = "Apptailors specializes in the development of mobile and web applications. Our team takes care of your project by creating of the architecture, preparing the design and developing the application."
 
 const IndexPage = () => {
   return (
     <>
-      <Helmet>
-          <meta charSet="utf-8" />
-          <title>AppTailors</title>
-          <link rel="canonical" href="https://gatsbypageapptailors.gatsbyjs.io/" />
-      </Helmet>
+      <SEO title="AppTailors" keywords={keywords} description={description} />
       <Navbar links={links} />
       <div id="TOP">
         <Header />

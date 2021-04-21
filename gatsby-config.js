@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby page from scratch",
+    title: "AppTailors",
+    titleTemplate: "AppTailors",
+    description:
+      "Apptailors specializes in the development of mobile and web applications. Our team takes care of your project by creating of the architecture, preparing the design and developing the application.",
+    url: "https://gatsbypageapptailors.gatsbyjs.io",
   },
   plugins: [
     "gatsby-plugin-sass",
