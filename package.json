@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-page-from-scratch",
+  "name": "gatsby-page-app-tailors",
   "version": "1.0.0",
   "private": true,
-  "description": "Gatsby page from scratch",
+  "description": "Gatsby page similar to App Tailors website (recruitment task)",
   "author": "Rafal",
   "keywords": [
     "gatsby"
