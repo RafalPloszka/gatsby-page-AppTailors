@@ -6,7 +6,6 @@ import Image from './Image';
 import * as styles from './ServiceCard.module.scss';
 
 const ServiceCard = ({ path, cardTitle, cardText, imageFileName, imageAlt }) => {
-  console.log(imageFileName);
   return (
     <a 
       href={path}
