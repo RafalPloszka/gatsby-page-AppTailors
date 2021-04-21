@@ -33,7 +33,6 @@ const Header = () => {
             <Button
               className={styles.button}
               message={'BROWSE NOW'}
-              onClick={() => console.log('CLICK!')}
               primary
             />
           </Link>
