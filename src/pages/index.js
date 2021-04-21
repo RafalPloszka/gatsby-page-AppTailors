@@ -1,4 +1,5 @@
 import * as React from "react";
+import { Helmet } from "react-helmet";
 import "@fontsource/poppins";
 import "@fontsource/poppins/300.css";
 import "@fontsource/poppins/500.css";
@@ -24,6 +25,11 @@ const links = [
 const IndexPage = () => {
   return (
     <>
+      <Helmet>
+          <meta charSet="utf-8" />
+          <title>AppTailors</title>
+          <link rel="canonical" href="https://gatsbypageapptailors.gatsbyjs.io/" />
+      </Helmet>
       <Navbar links={links} />
       <div id="TOP">
         <Header />
