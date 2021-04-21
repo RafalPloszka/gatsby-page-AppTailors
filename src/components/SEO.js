@@ -16,8 +16,6 @@ const SEO = ({ title, description }) => {
     twitterUsername,
   } = site.siteMetadata
 
-  console.log(site.siteMetadata)
-
   const seo = {
     title: title || defaultTitle,
     description: description || defaultDescription,
