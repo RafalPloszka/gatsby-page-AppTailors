@@ -50,6 +50,7 @@ const Portfolio = () => {
           title="Ready to"
           boldText="talk shop?"
           caption="Contact us &nbsp; &nbsp; &nbsp; &nbsp; ⟶"
+          buttonLink="mailto:hello@apptailors.com"
           buttonClassName={styles.bannerButton}
         />
       </section>

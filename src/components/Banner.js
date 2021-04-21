@@ -6,13 +6,29 @@ import Button from './Button';
 
 import * as styles from './Banner.module.scss';
 
-const Banner = ({ position, version, title, boldText, caption, buttonClassName}) => {
+const Banner = ({ position, version, title, boldText, caption, buttonClassName, buttonLink}) => {
 
   const classes = classNames(
     styles.banner,
     position === 'top' && styles.top,
     position === 'bottom' && styles.bottom
   );
+
+  const buttonWihtoutLink = version === 'button' ? (
+    <div className={styles.button}>
+      <Button 
+        message={caption} 
+        className={buttonClassName}
+        primary
+      />
+    </div>
+  ) : null;
+  
+  const buttonSection = buttonLink ? (
+    <a href="mailto:hello@apptailors.com" className={styles.linkButton}>
+      {buttonWihtoutLink}
+    </a>
+  ) : buttonWihtoutLink;
 
   return (
     <div className={classes}>
@@ -25,15 +41,7 @@ const Banner = ({ position, version, title, boldText, caption, buttonClassName})
             {caption}
           </div>
         }
-        {version === 'button' &&
-          <div className={styles.button}>
-            <Button 
-              message={caption} 
-              className={buttonClassName}
-              primary
-            />
-          </div>
-        }
+        {buttonSection}
       </div>
       
     </div>
@@ -46,7 +54,8 @@ Banner.propTypes = {
   title: PropTypes.string, 
   boldText: PropTypes.string, 
   caption: PropTypes.string,
-  buttonClassName: PropTypes.string
+  buttonClassName: PropTypes.string,
+  buttonLink: PropTypes.string,
 }
 
 export default Banner
