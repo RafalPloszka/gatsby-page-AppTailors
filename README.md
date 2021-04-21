@@ -12,11 +12,11 @@ Part of AppTailors website (https://apptailors.co/).
 - [x] Custom hook for scrolling position check (optimized with throttle) 
 - [x] Styling using SaSS, modules, no Bootstrap 
 - [x] Usage of Gatsby elements (Link for inner linking, GatsbyImage) 
+- [x] SEO basic setup 
 
 ### Further development
 
 - [ ] add more sections from original website
-- [ ] SEO
 - [ ] extracting all content (for easier copy/images management)
 
 ### Installation
