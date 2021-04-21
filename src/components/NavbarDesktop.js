@@ -53,7 +53,6 @@ const Navbar = ({ links }) => {
                         activeClass={styles.active}
                         spy
                         smooth="easeInOutQuart"
-                        // onClick={onClick}
                       >
                         {link.name}
                       </Link>

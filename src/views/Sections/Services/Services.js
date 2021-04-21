@@ -1,11 +1,10 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import ServiceCard from '../../../components/ServiceCard';
 
 import * as styles from './Services.module.scss';
 
-const Services = props => {
+const Services = () => {
   return (
     <section id="Services" className={styles.pageSection}>
       <div className={styles.container}>
@@ -55,8 +54,4 @@ const Services = props => {
   )
 }
 
-Services.propTypes = {
-
-}
-
-export default Services
+export default Services;

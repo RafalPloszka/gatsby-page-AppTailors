@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-scroll';
 
@@ -9,13 +8,12 @@ import Button from '../../components/Button';
 import * as styles from './Header.module.scss';
 
 
-const Header = props => {
+const Header = () => {
   return (
     <header className={styles.header}>
       <div className={classNames(styles.headerContent, styles.container)}>
         <div className={styles.imageWrapper}>
           <Image 
-            // className={styles.}
             fileName={"graphic-apptailors.jpg"}
             alt="main graphic"  
           />
@@ -45,8 +43,4 @@ const Header = props => {
   )
 }
 
-Header.propTypes = {
-
-}
-
-export default Header
+export default Header;

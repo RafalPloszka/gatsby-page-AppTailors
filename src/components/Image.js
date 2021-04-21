@@ -39,8 +39,4 @@ Image.propTypes = {
   alt: PropTypes.string,
 };
 
-Image.defaultProps = {
-  alt: null,
-};
-
 export default Image;

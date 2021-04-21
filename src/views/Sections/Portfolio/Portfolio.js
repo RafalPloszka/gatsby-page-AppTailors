@@ -1,12 +1,11 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import Banner from '../../../components/Banner';
 import PortfolioItem from '../../../components/PortfolioItem';
 
 import * as styles from './Portfolio.module.scss';
 
-const Portfolio = props => {
+const Portfolio = () => {
   return (
     <section id="Portfolio" className={styles.pageSection}>
       <section>
@@ -59,8 +58,4 @@ const Portfolio = props => {
   )
 }
 
-Portfolio.propTypes = {
-
-}
-
-export default Portfolio
+export default Portfolio;

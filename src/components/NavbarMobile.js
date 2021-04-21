@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-// import { Link } from 'gatsby';
 import { Link } from 'react-scroll';
 
 import Button from './Button';
@@ -14,12 +13,12 @@ const NavbarMobile = ({ links }) => {
   const [visible, setVisible] = useState(true); 
   const [expanded, setExpanded] = useState(false);
 
-  const handleScroll = () => {
+  const handleScroll = useCallback(() => {
     const currentScrollPos = window.pageYOffset;
     setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
     setPrevScrollPos(currentScrollPos);
     setExpanded(false);
-  };
+  }, [prevScrollPos]);
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
