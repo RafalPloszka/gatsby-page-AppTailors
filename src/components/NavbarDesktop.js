@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
-// import { Link } from 'gatsby';
 import { Link } from 'react-scroll';
 
 import Button from './Button';
@@ -13,10 +12,10 @@ const Navbar = ({ links }) => {
 
   const [shrink, setShrink] = useState(false);
 
-  const handleWindowScroll = () => {
+  const handleWindowScroll = useCallback(() => {
     const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
     setShrink(scrollTop > 100);
-  }
+  }, []);
 
   useWindowOnScroll(handleWindowScroll);
 

@@ -1,15 +1,19 @@
-import React from "react";
+import { useEffect } from "react";
+import { throttle } from "throttle-debounce";
+
 
 const useWindowOnScroll = (handleWindowScroll) => {
+  const handleScrollThrottle = throttle(100, handleWindowScroll);
 
-  React.useEffect(() => {
-    window.addEventListener("scroll", handleWindowScroll);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScrollThrottle);
     return () => {
-      window.removeEventListener("scroll", handleWindowScroll);
+      window.removeEventListener("scroll", handleScrollThrottle);
+      handleScrollThrottle.cancel();
     };
-  }, [handleWindowScroll]);
+  }, [handleScrollThrottle]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     handleWindowScroll();
   }, []);
 };
