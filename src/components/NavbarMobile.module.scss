@@ -1,0 +1,141 @@
+@import '../styles/core.scss';
+
+.navbar {
+  transition-duration: 100ms;
+  transition-delay: 0ms;
+  background-color: #fcfcfc;
+  top: -0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  padding: .5rem 1rem;
+  height: 80px;
+  width: 100vw;
+  box-shadow: 0 20px 22px -22px rgb(0 0 0 / 15%);
+  @media (min-width: 991) {
+    display: none;
+  }
+}
+
+.notVisible {
+  top: -80px;
+}
+
+.fixedTop {
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.shrink {
+  transition: all .1s ease-in-out;
+  height: 80px;
+  box-shadow: 0 20px 22px -22px rgb(0 0 0 / 15%);
+}
+
+.shrink button {
+  padding: 6px 17px;
+}
+
+.container {
+  max-width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 768px) {
+    padding: 10px !important;
+  }
+}
+
+.navItem {
+  letter-spacing: .01rem;
+  padding: 4px 0;
+  transition: all .1s ease-in-out;
+  font-size: 0.8rem;
+}
+
+.collapse {
+  display: none;
+  transition: all 1.5s ease-in-out;
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+  background-color: #fcfcfc;
+  box-shadow: 0 20px 22px -22px rgb(0 0 0 / 15%);
+  position: fixed;
+  width: 100vw;
+  top: 79px;
+  left: 0;
+}
+
+.collapseContent {
+  display: none;
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.expanded {
+  display: block !important;
+}
+
+.navLinks {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 30px;
+  list-style: none;
+}
+
+.link {
+  cursor: pointer;
+  font-size: 120%;
+  font-weight: 600;
+  padding-right: 0;
+  padding-left: 0;
+  color: #001427;
+  &:hover {
+    color: $mainBlue !important;
+  }
+}
+
+.active {
+  color: $mainBlue !important;
+}
+
+.cursorPointer {
+  cursor: pointer;
+  padding: 0;
+}
+  
+.button {
+  font-size: .8rem;
+  margin: 0 0 30px;
+  padding: 12px 34px;
+  text-transform: none;
+  font-weight: 700;
+  letter-spacing: .01rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 12px;
+  transition: all .1s ease-in-out;
+}
+
+.icon {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  width: 0.875em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
